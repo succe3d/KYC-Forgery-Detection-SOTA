@@ -1,0 +1,20 @@
+# Large ML/model files
+*.pt
+*.pth
+*.bin
+*.h5
+*.pkl
+*.rar
+*.zip
+*.tar
+*.gz
+*.img
+*.raw
+
+# Datasets and model folders
+datasets/
+models/weights/
+__pycache__/
+*.pyc
+.env
+*.egg-info/
