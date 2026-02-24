@@ -3,8 +3,8 @@
 ## Project Overview
 
 Deep learning system for detecting forgeries in KYC (Know Your Customer) identity documents.
-Operates on Russian ID cards and classifies six attack types: copy-paste manipulation,
-face morphing, face replacement, combined methods, inpainting/rewriting, and crop-and-replace.
+Operates on Russian ID cards and classifies six attack types: copy and paste manipulation,
+face morphing, face replacement, combined methods, inpainting/rewriting, and crop and replace.
 Core approach: hybrid retrieval over a pre-built database using biometric (ArcFace face embeddings)
 and textual (Donut OCR) signals, fused via a weighted alpha parameter.
 
@@ -44,11 +44,11 @@ SOTA/
 
 | File | Role |
 |---|---|
-| `Facial and Text Recognition Bank.ipynb` | Inference — loads indices, runs hybrid search, renders dashboard |
-| `InfoExtract_updated.ipynb` | Training — fine-tunes Donut on RUS dataset, builds FAISS/TF-IDF indices |
+| `Facial and Text Recognition Bank.ipynb` | Inference: loads indices, runs hybrid search, renders dashboard |
+| `InfoExtract_updated.ipynb` | Training: fine tunes Donut on RUS dataset, builds FAISS/TF-IDF indices |
 | `instalation_instructions.txt` | Conda env setup (`sotaenv`) and full pip/conda install commands |
 | `custom_trained_donut_model/config.json` | Model architecture (Swin 1024-d encoder, 4-layer MBart decoder) |
-| `Dataset/RUS/meta/detailed_with_fraud_info/*.json` | Ground-truth annotation schemas with bbox + field metadata |
+| `Dataset/RUS/meta/detailed_with_fraud_info/*.json` | Ground truth annotation schemas with bbox + field metadata |
 
 ## Essential Commands
 
